@@ -1,10 +1,5 @@
-// Yağızcem CENGİZ
-// 170757058
-// Bilgisayar Mühendisliği
-// Nesneye Yönelik Programlama BIM - 104
-// II. Dönem (2. yarıyıl)
-// Proje3
-// Dr. Öğr. Üyesi Gülşah TÜMÜKLÜ ÖZYER
+// YaÄŸÄ±zcem CENGÄ°Z
+
 
 
 #include "Kitaplik.h"
@@ -15,18 +10,18 @@ using namespace std;
 
 void Kitaplik::kitapEkle(Kitap kitap)
 {
-	kitaplar[kitapSayisi] = kitap;        //Kullanicinin girdigi kitaplari KitapSayisi olarak array içine yazdık ve kitap nesnesine eşitledik.
-	kitapSayisi++;      // Kullanici kitap girdikce , kitabı 1 arttıracak
+	kitaplar[kitapSayisi] = kitap;        //Kullanicinin girdigi kitaplari KitapSayisi olarak array iÃ§ine yazdÄ±k ve kitap nesnesine eÅŸitledik.
+	kitapSayisi++;      // Kullanici kitap girdikce , kitabÄ± 1 arttÄ±racak
 }
 
 int Kitaplik::kacKitap()
 {
-	return kitapSayisi;     // Kitap sayisini döndüren fonksiyon
+	return kitapSayisi;     // Kitap sayisini dÃ¶ndÃ¼ren fonksiyon
 }
 
 void Kitaplik::kitaplariBastir()
 {
-	for (int i = 0; i < kitapSayisi; i++)     // For döngüsüyle , kullanicin girdiği kitapların bilgilerini yazdırıyoruz.
+	for (int i = 0; i < kitapSayisi; i++)     // For dÃ¶ngÃ¼sÃ¼yle , kullanicin girdiÄŸi kitaplarÄ±n bilgilerini yazdÄ±rÄ±yoruz.
 	{
 		cout << "\n" << i + 1  << "." <<" Kitap Hakkindaki Bilgiler : \n"
 			<< "Ad : " << kitaplar[i].getAd() << "\n"
@@ -43,7 +38,7 @@ void Kitaplik::kitaplariBastir()
 
 void Kitaplik::kullaniciGirdisi()
 {                                  
-	Kitap k;                // Kitap.h'daki fonksiyonu çekmek için k nesnesi oluşturduk.
+	Kitap k;                // Kitap.h'daki fonksiyonu Ã§ekmek iÃ§in k nesnesi oluÅŸturduk.
 	bool dongu = true;
 	char cevap;                // kullanicidan 'A' 'B' 'C' 'D' gibi bilgiler almak icin cevap degiskeni olusturduk.
 
@@ -55,7 +50,7 @@ void Kitaplik::kullaniciGirdisi()
 			<< "Cikmak icin 'D' giriniz : \n";
 		cin >> cevap;
 		cin.ignore();
-		switch (cevap)          // kullanicinin verdigi cevaba yonelik sonuçlar..
+		switch (cevap)          // kullanicinin verdigi cevaba yonelik sonuÃ§lar..
 		{
 			case 'A':
 			{
@@ -81,7 +76,7 @@ void Kitaplik::kullaniciGirdisi()
 			case 'D':
 			{
 				cout << "\nProgramdan cikis yaptiniz.";
-				dongu = false;   // kullanici 'D' ye basarsa dongu = false oluyor. Yani While dongusunden çıkıyor , program bitiyor.
+				dongu = false;   // kullanici 'D' ye basarsa dongu = false oluyor. Yani While dongusunden Ã§Ä±kÄ±yor , program bitiyor.
 				break;
 			}
 
