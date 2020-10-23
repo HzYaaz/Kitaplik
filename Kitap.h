@@ -1,10 +1,5 @@
-// Yaðýzcem CENGÝZ
-// 170757058
-// Bilgisayar Mühendisliði
-// Nesneye Yönelik Programlama BIM - 104
-// II. Dönem (2. yarýyýl)
-// Proje3
-// Dr. Öðr. Üyesi Gülþah TÜMÜKLÜ ÖZYER
+// Yagizcem CENGIZ
+
 
 
 #include <iostream>
